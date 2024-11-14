@@ -1,0 +1,35 @@
+# Node.js
+node_modules
+**/node_modules/
+Backend/.cache
+**/.yaml
+**/.env
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+lib/
+vendor/
+bower_components/
+jspm_packages/
+
+# User-specific stuff
+.npm/
+.yarn/
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.pdf

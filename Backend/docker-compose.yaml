@@ -1,0 +1,22 @@
+services:
+
+  mongo_db:
+    container_name: database_container
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+
+  backend:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    depends_on:
+        - mongo_db
+    env_file:
+      - .env
+    ports:
+        - "8080:8080"
+
+volumes:
+  mongo_db: {}
